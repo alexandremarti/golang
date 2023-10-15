@@ -1,0 +1,15 @@
+POST http://localhost:8000/products
+Content-Type: application/json
+
+{
+    "name": "Meu produto 02",
+    "price": 110
+}
+
+#{"name": "Meu produto 03 - via kafka","price": 120}
+### listar produtos
+GET http://localhost:8000/products
+Content-Type: application/json
+
+
+
