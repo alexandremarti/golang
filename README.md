@@ -9,6 +9,8 @@ Para rodar o app
 go run cmd/app/main.go
  ```
 
+Para testar o programa via rest os endpoints estão no arquivo test.http
+
 Próximos passos
 - Organizar para rodar o app no container
 
