@@ -13,7 +13,8 @@ Próximos passos
 
 
 ## Docker compose para criar o kafka no docker local, caso seja necessário
-### docker-compose.yml
+```
+# docker-compose.yml
 version: '3.3'
 services:
   db:
@@ -36,6 +37,7 @@ services:
 # Names our volume
 volumes:
   my-db:
+ ```
 
 ## Cria a base de dados mysql
 docker-compose exec db bash
@@ -52,7 +54,9 @@ select * from products;
 
 
 ## Docker compose para criar o kafka no docker local, caso seja necessário
-### docker-compose.yml
+ 
+ ```
+# docker-compose.yml
 version: "3.7"
 services:
   zookeeper:
@@ -82,7 +86,7 @@ services:
 volumes:
   kafka-volume:
   zookeeper-volume:
-
+ ```
 
 ## Criar o tópico kafka
 docker-compose exec kafka bash
