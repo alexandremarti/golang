@@ -1,12 +1,13 @@
 
 # Programa GO que cria novos produtos tanto via API REST quanto via fila kafka
 
-No arquivo cmd/app/main.go está é iniciado tanto o servidor http quanto o consumer da fila kafka
+No arquivo cmd/app/main.go é iniciado tanto o servidor http quanto o consumer da fila kafka
 
 Para rodar o app
 
+ ```
 go run cmd/app/main.go
-
+ ```
 
 Próximos passos
 - Organizar para rodar o app no container
@@ -40,18 +41,23 @@ volumes:
  ```
 
 ## Cria a base de dados mysql
+ 
+ ```
 docker-compose exec db bash
 
 mysql -uroot -ppassword
 
 create database products;
 exit;
+ ```
 
 ## Acessa o banco de dados products e cria a tabela products
+
+ ```
 mysql -uroot -ppassword products
 create table products (id varchar(255), name varchar(255), price float);
 select * from products;
-
+ ```
 
 ## Docker compose para criar o kafka no docker local, caso seja necessário
  
@@ -89,12 +95,18 @@ volumes:
  ```
 
 ## Criar o tópico kafka
-docker-compose exec kafka bash
 
+ ```
+docker-compose exec kafka bash
 kafka-console-producer.sh --bootstrap-server=localhost:9092 --topic=products
+ ```
 
 ## aqui para enviar uma mensagem que resultará no cadastramento via a mensagem recebida
+ ```
 kafka-console-producer.sh --bootstrap-server=localhost:9092 --topic=products
+ ```
 ###
 colar esse json
+ ```
 {"name": "Meu produto 03 - via kafka","price": 120}
+ ```
