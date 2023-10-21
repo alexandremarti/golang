@@ -24,7 +24,7 @@ jobs:
     - name: Build
       run: go build -v ./cmd/app/
 
-    - uses: 8398a7/action-slack@v3
+    - uses: ravsamhq/notify-slack-action@v2
       if: always()
       with:
         status: ${{ job.status }}
