@@ -24,7 +24,7 @@ jobs:
     - name: Build
       run: go build -v ./cmd/app/
 
-    - uses: uses: 8398a7/action-slack@v3
+    - uses: 8398a7/action-slack@v3
       if: always()
       with:
         status: ${{ job.status }}
