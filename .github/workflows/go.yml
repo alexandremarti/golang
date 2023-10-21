@@ -23,9 +23,6 @@ jobs:
 
     - name: Build
       run: go build -v ./cmd/app/
-
-    - name: Checkout code
-        uses: actions/checkout@v2
         
     - name: Notify Slack
         env:
