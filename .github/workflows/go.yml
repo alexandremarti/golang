@@ -24,9 +24,13 @@ jobs:
     - name: Build
       run: go build -v ./cmd/app/
 
-    - uses: ravsamhq/notify-slack-action@v2
-      if: always()
-      with:
-        status: ${{ job.status }}
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} 
+    - name: Checkout code
+        uses: actions/checkout@v2
+        
+    - name: Notify Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "text": "Um novo commit foi feito em '${GITHUB_REPOSITORY}' por '${GITHUB_ACTOR}'."
+          }' $SLACK_WEBHOOK_URL
