@@ -33,7 +33,7 @@ func main() {
 	r.Post("/products", productHandlers.CreateProductHandler)
 	r.Get("/products", productHandlers.ListProductsHandler)
 
-	go http.ListenAndServe(":8000", r)
+	go http.ListenAndServe(":8000", r
 
 	msgChan := make(chan *kafka.Message)
 	// go akafka.Consume([]string{"products"}, "host.docker.internal:9094", msgChan)
