@@ -23,8 +23,8 @@ jobs:
 
     - name: Build
       run: go build -v ./cmd/app/
-        
-    - name: Notify Slack
+
+    - uses: actions/checkout@v2
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
