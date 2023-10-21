@@ -24,3 +24,13 @@ jobs:
     - name: Build
       run: go build -v ./cmd/app/
 
+    - name: Send slack notification
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+        env:
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+        if: always()
+
+        
