@@ -1,9 +1,65 @@
-<mxfile host="app.diagrams.net" modified="2023-10-21T12:12:39.950Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0" version="22.0.6" etag="bXmuGOUDunz-aCgWP2W3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-21T14:32:33.421Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="pGdrVlhLd7k3gDt_Zw5L" version="22.0.6" type="github">
   <diagram name="Página-1" id="wEYG69_IkSAqsx3fWIHJ">
-    <mxGraphModel>
+    <mxGraphModel dx="2074" dy="722" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NZxLagEHFGzY54UJaOuR-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NZxLagEHFGzY54UJaOuR-1" target="NZxLagEHFGzY54UJaOuR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-1" value="Clientes" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="39" y="190" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.012;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NZxLagEHFGzY54UJaOuR-3" target="NZxLagEHFGzY54UJaOuR-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="459" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NZxLagEHFGzY54UJaOuR-3" target="NZxLagEHFGzY54UJaOuR-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-3" value="Compra de Ingressos" style="html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="159" y="180" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="NZxLagEHFGzY54UJaOuR-4" target="NZxLagEHFGzY54UJaOuR-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="669" y="230" as="sourcePoint" />
+            <mxPoint x="459" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-4" value="Gateway de pagamento" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="489" y="180" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-6" value="Serviço de email" style="html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="484" y="460" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-17" value="Geração de Ingressos" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="99" y="460" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NZxLagEHFGzY54UJaOuR-19" target="NZxLagEHFGzY54UJaOuR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-19" value="Fila de E-mail" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="359" y="337.5" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NZxLagEHFGzY54UJaOuR-3" target="NZxLagEHFGzY54UJaOuR-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-27" value="&lt;div align=&quot;justify&quot;&gt;&lt;ul&gt;&lt;li&gt;Verificar a disponibilidade&lt;/li&gt;&lt;li&gt;Gerar ordem de compra&lt;/li&gt;&lt;li&gt;Enviar a requisição de pagamento&lt;/li&gt;&lt;li&gt;Confirmar pagamento&lt;br&gt;&lt;/li&gt;&lt;li&gt;Gerar código único do ingresso&lt;br&gt;&lt;/li&gt;&lt;li&gt;Gerar QrCode&lt;/li&gt;&lt;li&gt;Enviar e-mail de confirmação (async)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="119" y="30" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-29" value="&lt;div align=&quot;justify&quot;&gt;&lt;ul&gt;&lt;li&gt;QrCode pré-calculado&lt;/li&gt;&lt;li&gt;Código único do ingresso pré gravado&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="59" y="550" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-32" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="279" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-33" value="&lt;h1&gt;&lt;font color=&quot;#f66151&quot; style=&quot;font-size: 16px;&quot;&gt;Pontos únicos de falha&lt;/font&gt;&lt;br&gt;&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;Instablilidade do gateway de pagamento&lt;/li&gt;&lt;li&gt;&lt;strike&gt;Instabilidade do serviço de e-mail&lt;/strike&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="799" y="150" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NZxLagEHFGzY54UJaOuR-34" value="&lt;h1&gt;&lt;font color=&quot;#f66151&quot; style=&quot;font-size: 16px;&quot;&gt;Pontos de possível lentidão&lt;/font&gt;&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;Lentidão do gateway de pagamento&lt;/li&gt;&lt;li&gt;&lt;strike&gt;Geração do ingresso e do QrCode&lt;/strike&gt;&lt;/li&gt;&lt;li&gt;&lt;strike&gt;Envio do e-mail de confirmação&lt;/strike&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="799" y="310" width="340" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
