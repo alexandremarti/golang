@@ -100,7 +100,7 @@ volumes:
 
  ```
 docker-compose exec kafka bash
-kafka-console-producer.sh --bootstrap-server=localhost:9092 --topic=products
+kafka-console-topic.sh --bootstrap-server=localhost:9092 --topic=products --create
  ```
 
 ## aqui para enviar uma mensagem que resultará no cadastramento via a mensagem recebida
