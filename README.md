@@ -1,7 +1,6 @@
 
 # Programa GO que cria novos produtos tanto via API REST quanto via fila kafka
 
-
 No arquivo cmd/app/main.go é iniciado tanto o servidor http quanto o consumer da fila kafka
 
 Para rodar o app
